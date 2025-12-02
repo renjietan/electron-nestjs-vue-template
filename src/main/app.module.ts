@@ -38,7 +38,7 @@ console.log("-----------------", __dirname);
     }),
     TypeOrmModule.forRoot({
       type: "sqlite",
-      database: "test.db",
+      database: "sqlite3.db",
       // entities: [],
       synchronize: true,
       logging: true,
