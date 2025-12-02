@@ -1,10 +1,11 @@
 {
-  "name": "fast-vite-nestjs-electron",
+  "name": "motail",
   "version": "0.0.1",
   "packageManager": "pnpm@8.15.6",
   "description": "Vite + Electron with Doubleshot, so fast! ⚡",
   "main": "dist/main/index.js",
   "scripts": {
+    "preinstall": "copy sqlite3-v5.1.7-napi-v6-win32-x64.tar.gz sqlite3-v5.1.7-napi-v36-win32-x64.tar.gz && rimraf sqlite3-v5.1.7-napi-v6-win32-x64.tar.gz",
     "dev": "rimraf dist && vite",
     "debug": "rimraf dist && vite -- --dsb-debug",
     "build": "rimraf dist && vue-tsc && vite build",
